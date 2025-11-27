@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ali Badshah</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-robot"></i></span>
+      <span class="logo-text">Badshah Robotics</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>Robotic Engineer To Be..</p>
+    </div>
+  </section>
+
+  <section class="container two-column">
+    <div>
+      <h2>Who I am</h2>
+      <p>
+        I am Ali Badshah, a BSc student in Science &amp; Technology at the University of Tartu
+        with a specialisation in Robotics and Bio-Engineering. I enjoy building friendly robots
+        that sit on desks, react to people and make studying less lonely.
+      </p>
+      <p>
+        My work combines embedded systems, 3D-printed mechanisms and human-robot interaction.
+        Recently I have been focusing on the Robotic Study Companion (RSC) and Pia-the-µRSC,
+        improving portability, adaptability and cost-effectiveness.
+      </p>
+      <p>
+        I like to learn by doing: soldering hardware, debugging weird servo behaviour, tuning
+        motion, and documenting everything so others can replicate my builds.
+      </p>
+    </div>
+
+    <div>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><i class="fa-solid fa-gear"></i> Robotics &amp; embedded systems</li>
+        <li><i class="fa-solid fa-microchip"></i> Microcontrollers (Raspberry Pi Pico, ESP32, Raspberry Pi)</li>
+        <li><i class="fa-solid fa-code"></i> Python, MicroPython, C basics</li>
+        <li><i class="fa-solid fa-cube"></i> CAD &amp; 3D printing (SolidWorks / others)</li>
+        <li><i class="fa-solid fa-wave-square"></i> Digital signal processing foundations</li>
+        <li><i class="fa-solid fa-brain"></i> Human-Robot Interaction &amp; companion robots</li>
+      </ul>
+
+      <h2>Education</h2>
+      <div class="card-simple">
+        <h3>University of Tartu</h3>
+        <p>BSc in Science &amp; Technology (Robotics &amp; Bio-Engineering)</p>
+        <p class="muted">Tartu, Estonia</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p>© <span id="year"></span> Ali Badshah. All rights reserved.</p>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>

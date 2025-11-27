@@ -7,19 +7,26 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
+<!-- HEADER -->
 <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
       <span class="logo-icon"><i class="fa-solid fa-robot"></i></span>
       <span class="logo-text">Badshah Robotics</span>
     </div>
+
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -29,7 +36,11 @@
   </div>
 </header>
 
+
+<!-- MAIN -->
 <main class="page-main">
+
+  <!-- PAGE INTRO -->
   <section class="page-hero">
     <div class="container">
       <h1>Projects</h1>
@@ -37,7 +48,10 @@
     </div>
   </section>
 
+  <!-- PROJECT CARDS -->
   <section class="container cards-grid">
+
+    <!-- Pia-the-µRSC -->
     <article class="project-card">
       <h2>Pia-the-µRSC</h2>
       <p class="muted">Robotic study companion prototype built on Raspberry Pi Pico.</p>
@@ -52,15 +66,18 @@
         <li>3D printing</li>
       </ul>
       <div class="card-links">
-        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub (soon)</a>
+        <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub Repo
+        </a>
       </div>
     </article>
 
+    <!-- RSC -->
     <article class="project-card">
       <h2>Robotic Study Companion (RSC)</h2>
       <p class="muted">Companion robot for learning support and HRI experiments.</p>
       <p>
-        Worked on RSC v4 / v4.1 focusing on hardware robustness, assembly documentation
+        Worked on RSC v4 / v4.1 focusing on hardware robustness, assembly documentation,
         and making the platform easier to replicate for students and researchers.
       </p>
       <ul class="tag-list">
@@ -69,10 +86,13 @@
         <li>Raspberry Pi</li>
       </ul>
       <div class="card-links">
-        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Documentation (soon)</a>
+        <a href="https://rsc.ee/docs.html" target="_blank">
+          <i class="fa-solid fa-book"></i> Documentation
+        </a>
       </div>
     </article>
 
+    <!-- SenseCAP Watcher -->
     <article class="project-card">
       <h2>SenseCAP Watcher</h2>
       <p class="muted">Human detection &amp; gesture demo.</p>
@@ -85,10 +105,14 @@
         <li>Edge AI</li>
       </ul>
       <div class="card-links">
-        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn post (soon)</a>
+        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_ai-activity-7299841166122913792-ey76?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn Post
+        </a>
       </div>
     </article>
 
+    <!-- Ortomi -->
     <article class="project-card">
       <h2>Ortomi &amp; Other Companions</h2>
       <p class="muted">Exploring different social robot designs.</p>
@@ -100,8 +124,15 @@
         <li>Social robots</li>
         <li>Rapid prototyping</li>
       </ul>
+      <div class="card-links">
+        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_innovation-activity-7301253669088342018-Em7h?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn Post
+        </a>
+      </div>
     </article>
 
+    <!-- SO-101 -->
     <article class="project-card">
       <h2>SO-101 Leader–Follower Arms</h2>
       <p class="muted">LeRobot Hackathon project.</p>
@@ -115,16 +146,21 @@
         <li>LeRobot</li>
       </ul>
     </article>
+
   </section>
 </main>
 
+
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-content">
     <p>© <span id="year"></span> Ali Badshah. All rights reserved.</p>
   </div>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </footer>
+
 </body>
 </html>

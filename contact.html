@@ -51,41 +51,31 @@
       </div>
 
       <!-- RIGHT SIDE: WORKING CONTACT FORM -->
-      <div class="contact-section">
-        <h2>Quick Message</h2>
-
-        <p style="color:var(--muted); margin-top:-0.2rem;">
-          This form goes directly to your email through Formspree.
-        </p>
-
-        <div class="contact-form">
-
-          <form action="https://formspree.io/f/myzqjaoe" method="POST">
-
-            <label>
-              Name
-              <input type="text" name="name" required>
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" required>
-            </label>
-
-            <label>
-              Message
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-
-            <button type="submit" class="btn btn-primary" style="margin-top:1rem; width:100%;">
-              Send Message
-            </button>
-
-          </form>
-
-        </div>
+      <section class="contact-section container">
+        <h1>Quick Message</h1>
+        <p>This form goes directly to your email through Formspree.</p>
+      
+        <form class="contact-form" action="https://formspree.io/f/myzqjaoe" method="POST">
+          
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+      
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn-primary full" type="submit">
+            Send Message
+          </button>
+        </form>
+      </section>
       </div>
-
     </div>
   </main>
 

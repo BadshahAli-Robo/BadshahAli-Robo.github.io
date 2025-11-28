@@ -485,3 +485,10 @@ nav a.active {
     padding-top: 2.5rem;
   }
 }
+
+/* Make project text justified */
+.project-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+

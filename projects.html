@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Ali Badshah</title>
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -30,41 +30,42 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
+      <a class="active" href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-
-<!-- MAIN -->
 <main class="page-main">
 
-  <!-- PAGE INTRO -->
   <section class="page-hero">
     <div class="container">
       <h1>Projects</h1>
-      <p>Companion robots, embedded systems and interactive hardware.</p>
+      <p>Robotics, embedded systems, HRI, and expressive companion-robot design.</p>
     </div>
   </section>
 
-  <!-- PROJECT CARDS -->
   <section class="container cards-grid">
 
     <!-- Pia-the-µRSC -->
     <article class="project-card">
       <h2>Pia-the-µRSC</h2>
-      <p class="muted">Robotic study companion prototype built on Raspberry Pi Pico.</p>
+      <p class="muted">Portable study-companion robot built on Raspberry Pi Pico.</p>
+
       <p>
-        A mini, desk-friendly study robot inspired by Pia-the-Robot and the RSC platform.
-        Focus on portability, low cost and reproducible hardware using 3D-printed parts
-        and micro servos.
+        I am engineering a highly portable and low-cost µ-version of the Robotic Study Companion (RSC)
+        platform. My work includes full CAD redesign, servo-mechanism optimization, sensor integration,
+        firmware development (MicroPython), and complete reproducibility-focused documentation.
       </p>
+
       <ul class="tag-list">
         <li>Raspberry Pi Pico</li>
         <li>Micro servos</li>
+        <li>CAD redesign</li>
+        <li>Sensor integration</li>
         <li>3D printing</li>
       </ul>
+
       <div class="card-links">
         <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank">
           <i class="fa-brands fa-github"></i> GitHub Repo
@@ -72,19 +73,25 @@
       </div>
     </article>
 
+
     <!-- RSC -->
     <article class="project-card">
       <h2>Robotic Study Companion (RSC)</h2>
-      <p class="muted">Companion robot for learning support and HRI experiments.</p>
+      <p class="muted">Companion robot platform for learning support and HRI research.</p>
+
       <p>
-        Worked on RSC v4 / v4.1 focusing on hardware robustness, assembly documentation,
-        and making the platform easier to replicate for students and researchers.
+        Contributed to RSC v4 / v4.1 where I focused on hardware robustness, improved servo mounting,
+        cable-management redesign, and detailed assembly documentation—making the platform easier for
+        students and researchers to build, maintain, and replicate.
       </p>
+
       <ul class="tag-list">
         <li>HRI</li>
         <li>Neopixels</li>
         <li>Raspberry Pi</li>
+        <li>Assembly documentation</li>
       </ul>
+
       <div class="card-links">
         <a href="https://rsc.ee/docs.html" target="_blank">
           <i class="fa-solid fa-book"></i> Documentation
@@ -92,79 +99,93 @@
       </div>
     </article>
 
+
     <!-- SenseCAP Watcher -->
     <article class="project-card">
       <h2>SenseCAP Watcher</h2>
-      <p class="muted">Human detection &amp; gesture demo.</p>
+      <p class="muted">Human-detection & gesture-recognition demonstration.</p>
+
       <p>
-        Built an overview and demo for the SenseCAP Watcher, showcasing human and
-        gesture detection and how it could be integrated into interactive robots.
+        Developed a full demonstration pipeline for the SenseCAP Watcher, including gesture-triggered
+        interaction logic and integration concepts for companion robots. Showcased real-time human
+        detection, region-based tracking, and expressive robot responses.
       </p>
+
       <ul class="tag-list">
         <li>Computer vision</li>
         <li>Edge AI</li>
+        <li>Interaction demo</li>
       </ul>
+
       <div class="card-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_ai-activity-7299841166122913792-ey76?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
+        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_ai-activity-7299841166122913792-ey76" 
            target="_blank">
           <i class="fa-brands fa-linkedin"></i> LinkedIn Post
         </a>
       </div>
     </article>
 
+
     <!-- Ortomi -->
     <article class="project-card">
-      <h2>Ortomi &amp; Other Companions</h2>
-      <p class="muted">Exploring different social robot designs.</p>
+      <h2>Ortomi & Other Companions</h2>
+      <p class="muted">Exploring expressive micro-robots & social-robot design.</p>
+
       <p>
-        Hands-on experience with Ortomi and other small social robots, comparing their
-        mechanics, electronics and interaction styles as inspiration for my own designs.
+        Studied Ortomi and other small social robots to understand expressive motion, mechanical
+        simplicity, low-power electronics, and interaction styles. This analysis directly informed
+        the personality, movement patterns, and gesture design for my own companion robots.
       </p>
+
       <ul class="tag-list">
         <li>Social robots</li>
+        <li>Expressive motion</li>
         <li>Rapid prototyping</li>
       </ul>
+
       <div class="card-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_innovation-activity-7301253669088342018-Em7h?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
+        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_innovation-activity-7301253669088342018-Em7h"
            target="_blank">
           <i class="fa-brands fa-linkedin"></i> LinkedIn Post
         </a>
       </div>
     </article>
+
 
     <!-- SO-101 -->
     <article class="project-card">
       <h2>SO-101 Leader–Follower Arms</h2>
-      <p class="muted">LeRobot Hackathon project.</p>
+      <p class="muted">LeRobot Hackathon project: motion-replication robotic arms.</p>
+
       <p>
-        Built and calibrated one leader and one follower SO-101 arm, where
-        the follower replicated the leader's motion to pick and place objects.
-        Demonstrated a working prototype with real-time motion following.
+        Built and calibrated one leader and one follower SO-101 robotic arm. I worked on servo alignment,
+        kinematic mapping, control-signal filtering, and real-time motion replication. The follower arm
+        successfully mirrored the leader's movements to pick and place objects in a live demonstration.
       </p>
+
       <ul class="tag-list">
         <li>Robotic arms</li>
         <li>Kinematics</li>
+        <li>Motion replication</li>
         <li>LeRobot</li>
       </ul>
+
       <div class="card-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_lerobot-lerobot-so101-activity-7340774137021222913-y4Y6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
+        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_lerobot-lerobot-so101-activity-7340774137021222913-y4Y6"
            target="_blank">
           <i class="fa-brands fa-linkedin"></i> LinkedIn Demo
         </a>
       </div>
     </article>
 
-
   </section>
+
 </main>
 
-
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-content">
-    <p>© <span id="year"></span> Ali Badshah. All rights reserved.</p>
+    © <span id="year"></span> Ali Badshah — Badshah Robotics
   </div>
-
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>

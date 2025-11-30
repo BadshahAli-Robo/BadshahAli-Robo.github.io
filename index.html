@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Badshah Robotics | Home</title>
+  <title>Ali Badshah | Robotics Portfolio</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous"
-  />
+  <!-- FontAwesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -28,6 +26,7 @@
       <span class="logo-icon"><i class="fa-solid fa-robot"></i></span>
       <span class="logo-text">Badshah Robotics</span>
     </div>
+
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -37,101 +36,50 @@
   </div>
 </header>
 
-<main class="page-main">
+<!-- ===== HERO SECTION (NEW) ===== -->
+<section class="hero-modern container">
+  <div class="hero-left">
+    <h1>Ali Badshah</h1>
+    <h3>Robotic Engineer To Be..</h3>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      
-      <!-- TEXT -->
-      <div>
-        <div class="eyebrow">Robotics • Embedded Systems • HRI • CAD • Microcontrollers</div>
+    <p class="hero-subtext">
+      BSc student in Science & Technology (Robotics & Bio-Engineering) at the University of Tartu,<br>
+      building human-friendly companion robots, embedded systems, and interactive hardware.
+    </p>
 
-        <h1>Ali Badshah</h1>
-        <p class="tagline">Robotic Engineer To Be..</p>
+    <div class="hero-buttons">
+      <a href="projects.html" class="btn-primary">
+        <i class="fa-solid fa-folder-open"></i> View Projects
+      </a>
 
-        <p class="hero-body">
-          BSc student in Science & Technology (Robotics & Bio-Engineering) at the
-          University of Tartu, building human-friendly companion robots, embedded
-          systems and interactive hardware.
-        </p>
-
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">
-            <i class="fa-solid fa-folder-open"></i> View Projects
-          </a>
-          <a href="about.html" class="btn btn-ghost">
-            <i class="fa-solid fa-user"></i> More about me
-          </a>
-        </div>
-
-        <div class="hero-socials">
-          <a class="btn-social" href="https://github.com/BadshahAli-Robo" target="_blank">
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-          <a class="btn-social" href="https://www.linkedin.com/in/ali-badshah-4776aa203/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-        </div>
-
-
-      <!-- PHOTO -->
-      <div class="hero-photo-card">
-        <div class="photo-wrapper">
-          <img src="assets/img/profile.jpg" alt="Ali Badshah portrait" />
-        </div>
-        <div class="photo-caption">
-          Building Pia-the-µRSC & working on companion-robot design
-        </div>
-      </div>
-
+      <a href="about.html" class="btn-secondary">
+        <i class="fa-solid fa-user"></i> More About Me
+      </a>
     </div>
-  </section>
 
-  <!-- HIGHLIGHTS -->
-  <section class="highlight-strip">
-    <div class="container highlight-grid">
-
-      <div class="highlight-item">
-        <div class="highlight-icon"><i class="fa-solid fa-robot"></i></div>
-        <h2>Companion Robots</h2>
-        <p>
-          Designing expressive, human-friendly study-companion robots such as 
-          <strong>Pia-the-µRSC</strong> and <strong>RSC v4.1</strong>. My work focuses on motion 
-          personality, micro-expressions, motivational behaviour, and accessible 
-          interaction systems for learning environments.
-        </p>
-      </div>
-
-      <div class="highlight-item">
-        <div class="highlight-icon"><i class="fa-solid fa-microphone-lines"></i></div>
-        <h2>Embedded HRI</h2>
-        <p>
-          Developing embedded human-robot interaction systems combining gesture 
-          detection, voice input, expressive motion, LEDs, and sensor-driven behaviour. 
-          Specialized in real-time robotics using Raspberry Pi Pico and ESP32.
-        </p>
-      </div>
-
-      <div class="highlight-item">
-        <div class="highlight-icon"><i class="fa-solid fa-gears"></i></div>
-        <h2>End-to-End Builds</h2>
-        <p>
-          Full hardware–software pipeline: CAD modeling, 3D printing, mechanical 
-          assembly, servo calibration, sensor integration, wiring, soldering, and 
-          firmware development in MicroPython & C. Focus on reproducible educational robots.
-        </p>
-      </div>
-
+    <div class="hero-links">
+      <a href="https://github.com/BadshahAli-Robo" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/ali-badshah-4776aa203" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
-  </section>
+  </div>
 
-</main>
+  <div class="hero-right">
+    <div class="hero-image-wrapper">
+      <img src="assets/img/profile.jpg" alt="Ali Badshah" class="hero-image">
 
+      <div class="float-icon icon-1"><i class="fa-solid fa-robot"></i></div>
+      <div class="float-icon icon-2"><i class="fa-solid fa-microchip"></i></div>
+      <div class="float-icon icon-3"><i class="fa-solid fa-gears"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container footer-content">
     <p>© <span id="year"></span> Ali Badshah. All rights reserved.</p>
   </div>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>

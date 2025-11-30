@@ -1,108 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Ali Badshah</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Badshah Robotics</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+
 <header class="site-header">
-  <div class="container nav-container">
-    <div class="logo">
-      <span class="logo-icon"><i class="fa-solid fa-robot"></i></span>
-      <span class="logo-text">Badshah Robotics</span>
+    <div class="container nav-container">
+        <div class="logo">
+            <div class="logo-icon"><i class="fas fa-robot"></i></div>
+            <div class="logo-text">Badshah Robotics</div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
 </header>
 
-<main class="page-main">
-  <section class="page-hero">
-    <div class="container">
-      <h1>Projects</h1>
-      <p>Robotics, embedded systems, HRI, and expressive companion-robot design.</p>
-    </div>
-  </section>
 
-  <section class="container cards-grid">
+<main class="container page-section">
+
+    <h1 class="section-title">Projects</h1>
+    <p class="section-subtitle">Robotics, embedded systems, HRI, and expressive companion-robot design.</p>
 
     <!-- Pia-the-µRSC -->
-    <article class="project-card">
-      <h2>Pia-the-µRSC</h2>
-      <p class="muted">Portable study-companion robot built on Raspberry Pi Pico.</p>
-      <p>
-        I am engineering a highly portable and low-cost µ-version of the Robotic Study Companion (RSC) platform.
-        My work includes full CAD redesign, servo-mechanism optimization, sensor integration, firmware development
-        (MicroPython), and complete reproducibility-focused documentation.
-      </p>
-      <ul class="tag-list">
-        <li>Raspberry Pi Pico</li>
-        <li>Micro servos</li>
-        <li>CAD redesign</li>
-        <li>Sensor integration</li>
-        <li>3D printing</li>
-      </ul>
-      <div class="card-links">
-        <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank">
-          <i class="fa-brands fa-github"></i> GitHub Repo
-        </a>
-      </div>
-    </article>
+    <div class="section-block">
+        <h2><i class="fas fa-robot"></i> Pia-the-μRSC</h2>
+        <p>
+            Portable study-companion robot built on Raspberry Pi Pico.
+            I am engineering a highly portable and low-cost μ-version of the 
+            Robotic Study Companion (RSC) platform.
+        </p>
+
+        <ul>
+            <li><i class="fas fa-microchip"></i> Raspberry Pi Pico</li>
+            <li><i class="fas fa-gear"></i> Micro servos</li>
+            <li><i class="fas fa-cube"></i> CAD redesign</li>
+            <li><i class="fas fa-signal"></i> Sensor integration</li>
+            <li><i class="fas fa-print"></i> 3D printing</li>
+        </ul>
+
+        <p><a href="#" style="color:#7fc6ff;"><i class="fab fa-github"></i> GitHub Repo</a></p>
+    </div>
 
     <!-- RSC -->
-    <article class="project-card">
-      <h2>Robotic Study Companion (RSC)</h2>
-      <p class="muted">Companion-robot platform for learning support and HRI research.</p>
-      <p>
-        Contributed to RSC v4 / v4.1 where I focused on hardware robustness, improved servo mounting,
-        cable-management redesign, and detailed assembly documentation—making the platform easier for
-        students and researchers to build, maintain, and replicate.
-      </p>
-      <ul class="tag-list">
-        <li>HRI</li>
-        <li>Neopixels</li>
-        <li>Raspberry Pi</li>
-        <li>Assembly documentation</li>
-      </ul>
-      <div class="card-links">
-        <a href="https://rsc.ee/docs.html" target="_blank">
-          <i class="fa-solid fa-book"></i> Documentation
-        </a>
-      </div>
-    </article>
+    <div class="section-block">
+        <h2><i class="fas fa-hand-sparkles"></i> Robotic Study Companion (RSC)</h2>
+        <p>
+            Companion-robot platform for learning support and HRI research.
+            Contributed to RSC v4 / v4.1 with a focus on hardware robustness,
+            servo optimization, cable-management redesign, and detailed assembly
+            documentation.
+        </p>
+
+        <ul>
+            <li><i class="fas fa-brain"></i> HRI</li>
+            <li><i class="fas fa-lightbulb"></i> Neopixels</li>
+            <li><i class="fas fa-microchip"></i> Raspberry Pi</li>
+            <li><i class="fas fa-file-alt"></i> Assembly documentation</li>
+        </ul>
+
+        <p><a href="#" style="color:#7fc6ff;"><i class="fas fa-book"></i> Documentation</a></p>
+    </div>
 
     <!-- SenseCAP Watcher -->
-    <article class="project-card">
-      <h2>SenseCAP Watcher</h2>
-      <p class="muted">Human-detection & gesture-recognition demonstration.</p>
-      <p>
-        Developed a full demonstration pipeline for the SenseCAP Watcher, including gesture-triggered
-        interaction logic and integration concepts for companion robots. Showcased real-time human detection,
-        region-based tracking, and expressive robot responses.
-      </p>
-      <ul class="tag-list">
-        <li>Computer vision</li>
-        <li>Edge AI</li>
-      </ul>
-      <div class="card-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_ai-activity-7299841166122913792-ey76" target="_blank">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn Post
-        </a>
-      </div>
-    </article>
+    <div class="section-block">
+        <h2><i class="fas fa-eye"></i> SenseCAP Watcher</h2>
+        <p>
+            Human-detection and gesture-tracking robot demo built using 
+            Seeedstudio SenseCAP Watcher. Implemented gesture demos,
+            human tracking, and platform testing.
+        </p>
+    </div>
 
     <!-- Ortomi & Others -->
     <article class="project-card">

@@ -188,6 +188,38 @@ nav a.active {
   100% { transform: translateY(0); }
 }
 
+/* ----------------------------------------------- */
+/* ===== ABOUT PAGE SPACING — ADDED HERE ===== */
+/* ----------------------------------------------- */
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.about-section p {
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
+}
+
+.about-section h1 {
+  margin-bottom: 1.2rem;
+}
+
+.about-section h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section ul {
+  margin: 1rem 0 2rem;
+  line-height: 1.7;
+}
+
+.about-section ul li {
+  margin-bottom: 0.6rem;
+}
+
 /* ===== FOOTER ===== */
 .site-footer {
   margin-top: 4rem;

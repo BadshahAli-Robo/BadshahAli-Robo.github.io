@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects – Badshah Robotics</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
@@ -34,21 +34,25 @@
     Robotics, embedded systems, HRI, and expressive companion-robot design.
   </p>
 
-  <!-- ================== PROJECT 1 ================== -->
-  <section class="project-vertical">
+  <!-- ========================================================= -->
+  <!-- Pia-the-μRSC -->
+  <!-- ========================================================= -->
+  <section class="project-row">
 
+    <!-- MEDIA / CAROUSEL -->
     <div class="project-media">
-      <button class="nav-btn prev">&#10094;</button>
+      <button class="carousel-btn prev">&#10094;</button>
 
-      <div class="media-track">
-        <img src="assets/img/pia-1.jpg" alt="Pia-the-μRSC enclosure">
-        <img src="assets/img/pia-2.gif" alt="Pia-the-μRSC motion">
-        <img src="assets/img/pia-3.jpg" alt="Pia-the-μRSC internals">
+      <div class="carousel-track">
+        <img src="assets/img/pia-1.jpg" class="carousel-item active" alt="Pia enclosure">
+        <img src="assets/img/pia-2.gif" class="carousel-item" alt="Pia motion">
+        <img src="assets/img/pia-3.jpg" class="carousel-item" alt="Pia internals">
       </div>
 
-      <button class="nav-btn next">&#10095;</button>
+      <button class="carousel-btn next">&#10095;</button>
     </div>
 
+    <!-- TEXT -->
     <div class="project-content">
       <h2><i class="fas fa-robot"></i> Pia-the-μRSC</h2>
       <p class="project-tagline">
@@ -56,10 +60,10 @@
       </p>
 
       <p>
-        I engineered a highly portable and low-cost μ-version of the Robotic
-        Study Companion (RSC). The project focuses on CAD redesign,
-        servo-mechanism optimization, sensor integration, MicroPython firmware,
-        and full reproducibility-focused documentation.
+        I engineered a highly portable and low-cost μ-version of the Robotic Study
+        Companion (RSC). The project focuses on CAD redesign, servo-mechanism
+        optimization, sensor integration, MicroPython firmware, and full
+        reproducibility-focused documentation.
       </p>
 
       <ul class="project-tags">
@@ -70,22 +74,25 @@
       </ul>
 
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+        <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repo
+        </a>
       </div>
     </div>
 
   </section>
 
-  <!-- ================== PROJECT 2 ================== -->
-  <section class="project-vertical">
+  <!-- ========================================================= -->
+  <!-- Robotic Study Companion -->
+  <!-- ========================================================= -->
+  <section class="project-row">
 
     <div class="project-media">
-      <img class="single-media" src="assets/img/rsc-1.jpg" alt="Robotic Study Companion">
+      <img src="assets/img/RSC-1.jpg" class="single-media" alt="RSC hardware">
     </div>
 
     <div class="project-content">
       <h2><i class="fas fa-hand-sparkles"></i> Robotic Study Companion (RSC)</h2>
-
       <p>
         Companion-robot platform for learning support and HRI research.
         Contributed to RSC v4 / v4.1 with focus on hardware robustness,
@@ -101,37 +108,9 @@
       </ul>
 
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fas fa-book"></i> Documentation</a>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- ================== PROJECT 3 ================== -->
-  <section class="project-vertical">
-
-    <div class="project-media">
-      <img class="single-media" src="assets/img/ortomi-1.jpg" alt="Ortomi robot">
-    </div>
-
-    <div class="project-content">
-      <h2><i class="fas fa-users"></i> Ortomi & Other Companions</h2>
-
-      <p>
-        Studied Ortomi and other small social robots to understand expressive
-        motion, mechanical simplicity, low-power electronics, and interaction
-        styles. This analysis directly informed the personality and gesture
-        design of my own robots.
-      </p>
-
-      <ul class="project-tags">
-        <li>Social robots</li>
-        <li>Expressive motion</li>
-        <li>Rapid prototyping</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Post</a>
+        <a href="https://rsc.ee/docs.html" target="_blank">
+          <i class="fas fa-book"></i> Documentation
+        </a>
       </div>
     </div>
 
@@ -140,11 +119,37 @@
 </main>
 
 <footer class="site-footer">
-  <div class="footer-content">
-    <p>© 2025 Ali Badshah — Built with ❤️ and GitHub Pages</p>
-  </div>
+  <p>© 2025 Ali Badshah — Built with ❤️ and GitHub Pages</p>
 </footer>
 
-<script src="assets/js/carousel.js"></script>
+<!-- ========================================================= -->
+<!-- SIMPLE CAROUSEL SCRIPT -->
+<!-- ========================================================= -->
+<script>
+  document.querySelectorAll(".project-media").forEach(media => {
+    const items = media.querySelectorAll(".carousel-item");
+    if (!items.length) return;
+
+    let index = 0;
+    const prev = media.querySelector(".prev");
+    const next = media.querySelector(".next");
+
+    function show(i) {
+      items.forEach(img => img.classList.remove("active"));
+      items[i].classList.add("active");
+    }
+
+    prev.onclick = () => {
+      index = (index - 1 + items.length) % items.length;
+      show(index);
+    };
+
+    next.onclick = () => {
+      index = (index + 1) % items.length;
+      show(index);
+    };
+  });
+</script>
+
 </body>
 </html>

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Projects – Badshah Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body class="projects-page">
+<body>
 
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
@@ -27,105 +31,105 @@
   </div>
 </header>
 
-<main class="container page-section">
+<!-- ================= MAIN ================= -->
+<main class="container page-section projects-page">
 
   <h1 class="section-title">Projects</h1>
-  <p class="section-subtitle">Robotics, embedded systems, HRI, and expressive companion-robot design.</p>
+  <p class="section-subtitle">
+    Robotics, embedded systems, HRI, and expressive companion-robot design.
+  </p>
 
-  <!-- =========================
-       PROJECT 1 — PIA-the-μRSC
-  ========================== -->
-  <section class="project-vertical" id="pia">
-    <div class="project-media" data-carousel>
-      <button class="media-nav prev" type="button" aria-label="Previous media">
-        <i class="fa-solid fa-chevron-left"></i>
+  <!-- ===================================================== -->
+  <!-- PROJECT 1 : PIA-THE-µRSC -->
+  <!-- ===================================================== -->
+  <section class="project-vertical">
+
+    <!-- MEDIA -->
+    <div class="project-media">
+      <button class="media-nav prev" onclick="scrollMedia(this, -1)">
+        <i class="fas fa-chevron-left"></i>
       </button>
 
-      <div class="media-track" data-track>
-        <!-- Your uploaded assets (example) -->
-        <figure class="media-item">
-          <img src="assets/img/pia-1.jpg" alt="Pia-the-μRSC – build photo 1" loading="lazy">
-        </figure>
-
-        <figure class="media-item">
-          <img src="assets/img/pia-2.gif" alt="Pia-the-μRSC – demo GIF" loading="lazy">
-        </figure>
-
-        <figure class="media-item">
-          <img src="assets/img/pia-3.jpg" alt="Pia-the-μRSC – build photo 2" loading="lazy">
-        </figure>
-
-        <!-- Add more images/gifs like this:
-        <figure class="media-item">
-          <img src="assets/img/pia-4.jpg" alt="..." loading="lazy">
-        </figure>
-        -->
+      <div class="media-track">
+        <div class="media-item">
+          <img src="assets/images/pia-1.jpg" alt="Pia-the-μRSC enclosure">
+        </div>
+        <div class="media-item">
+          <img src="assets/images/pia-2.gif" alt="Pia-the-μRSC motion">
+        </div>
+        <div class="media-item">
+          <img src="assets/images/pia-3.jpg" alt="Pia-the-μRSC internals">
+        </div>
       </div>
 
-      <button class="media-nav next" type="button" aria-label="Next media">
-        <i class="fa-solid fa-chevron-right"></i>
+      <button class="media-nav next" onclick="scrollMedia(this, 1)">
+        <i class="fas fa-chevron-right"></i>
       </button>
     </div>
 
+    <!-- CONTENT -->
     <div class="project-content">
-      <h2 class="project-title"><i class="fas fa-robot"></i> Pia-the-μRSC</h2>
-      <p class="project-tagline">Portable micro study-companion robot built on Raspberry Pi Pico.</p>
+      <h2 class="project-title">🤖 Pia-the-μRSC</h2>
+      <p class="project-tagline">
+        Portable micro study-companion robot built on Raspberry Pi Pico.
+      </p>
 
       <p class="project-text">
-        I am engineering a highly portable and low-cost μ-version of the Robotic Study Companion (RSC) platform.
-        My work includes CAD redesign, servo-mechanism improvements, sensor integration, firmware development
-        (MicroPython), and reproducibility-focused documentation.
+        I engineered a highly portable and low-cost μ-version of the Robotic Study
+        Companion (RSC). The project focuses on CAD redesign, servo-mechanism
+        optimization, sensor integration, MicroPython firmware, and complete
+        reproducibility-focused documentation.
       </p>
 
       <ul class="project-tags">
         <li>Raspberry Pi Pico</li>
         <li>Micro servos</li>
         <li>CAD redesign</li>
-        <li>Sensor integration</li>
+        <li>Firmware (MicroPython)</li>
         <li>3D printing</li>
       </ul>
 
       <div class="project-links">
-        <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank" rel="noopener">
-          <i class="fa-brands fa-github"></i> GitHub Repo
+        <a href="#" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repository
         </a>
       </div>
     </div>
+
   </section>
 
-  <!-- =========================
-       PROJECT 2 — RSC
-  ========================== -->
-  <section class="project-vertical" id="rsc">
-    <div class="project-media" data-carousel>
-      <button class="media-nav prev" type="button" aria-label="Previous media">
-        <i class="fa-solid fa-chevron-left"></i>
+  <!-- ===================================================== -->
+  <!-- PROJECT 2 : ROBOTIC STUDY COMPANION -->
+  <!-- ===================================================== -->
+  <section class="project-vertical">
+
+    <div class="project-media">
+      <button class="media-nav prev" onclick="scrollMedia(this, -1)">
+        <i class="fas fa-chevron-left"></i>
       </button>
 
-      <div class="media-track" data-track>
-        <!-- Replace these with your real RSC files later -->
-        <figure class="media-item media-placeholder">
-          <div class="placeholder-inner">
-            <i class="fa-solid fa-image"></i>
-            <p>Add RSC images/GIFs here</p>
-            <small>assets/img/rsc-1.jpg, rsc-2.gif, ...</small>
-          </div>
-        </figure>
+      <div class="media-track">
+        <div class="media-item">
+          <img src="assets/images/rsc-1.jpg" alt="RSC assembly">
+        </div>
+        <div class="media-item">
+          <img src="assets/images/rsc-2.gif" alt="RSC interaction">
+        </div>
       </div>
 
-      <button class="media-nav next" type="button" aria-label="Next media">
-        <i class="fa-solid fa-chevron-right"></i>
+      <button class="media-nav next" onclick="scrollMedia(this, 1)">
+        <i class="fas fa-chevron-right"></i>
       </button>
     </div>
 
     <div class="project-content">
-      <h2 class="project-title"><i class="fas fa-hand-sparkles"></i> Robotic Study Companion (RSC)</h2>
-      <p class="project-tagline">Companion-robot platform for learning support and HRI research.</p>
+      <h2 class="project-title">🧠 Robotic Study Companion (RSC)</h2>
 
       <p class="project-text">
-        Contributed to RSC v4 / v4.1 with a focus on hardware robustness, improved servo mounting,
-        cable-management redesign, and detailed assembly documentation — making the platform easier
-        for students and researchers to build, maintain, and replicate.
+        Companion-robot platform for learning support and HRI research.
+        I contributed to RSC v4 / v4.1 with a focus on hardware robustness,
+        improved servo mounting, cable-management redesign, and detailed
+        step-by-step assembly documentation.
       </p>
 
       <ul class="project-tags">
@@ -136,190 +140,82 @@
       </ul>
 
       <div class="project-links">
-        <a href="https://rsc.ee/docs.html" target="_blank" rel="noopener">
-          <i class="fa-solid fa-book"></i> Documentation
+        <a href="#" target="_blank">
+          <i class="fas fa-book"></i> Documentation
         </a>
       </div>
     </div>
+
   </section>
 
-  <!-- =========================
-       PROJECT 3 — SenseCAP Watcher
-  ========================== -->
-  <section class="project-vertical" id="sensecap">
-    <div class="project-media" data-carousel>
-      <button class="media-nav prev" type="button" aria-label="Previous media">
-        <i class="fa-solid fa-chevron-left"></i>
+  <!-- ===================================================== -->
+  <!-- PROJECT 3 : ORTOMI & OTHER COMPANIONS -->
+  <!-- ===================================================== -->
+  <section class="project-vertical">
+
+    <div class="project-media">
+      <button class="media-nav prev" onclick="scrollMedia(this, -1)">
+        <i class="fas fa-chevron-left"></i>
       </button>
 
-      <div class="media-track" data-track>
-        <figure class="media-item media-placeholder">
-          <div class="placeholder-inner">
-            <i class="fa-solid fa-video"></i>
-            <p>Add SenseCAP images/GIFs here</p>
-            <small>assets/img/sensecap-1.gif, ...</small>
-          </div>
-        </figure>
+      <div class="media-track">
+        <div class="media-item">
+          <img src="assets/images/ortomi-1.jpg" alt="Ortomi robot study">
+        </div>
+        <div class="media-item">
+          <img src="assets/images/ortomi-2.jpg" alt="Social robot analysis">
+        </div>
       </div>
 
-      <button class="media-nav next" type="button" aria-label="Next media">
-        <i class="fa-solid fa-chevron-right"></i>
+      <button class="media-nav next" onclick="scrollMedia(this, 1)">
+        <i class="fas fa-chevron-right"></i>
       </button>
     </div>
 
     <div class="project-content">
-      <h2 class="project-title"><i class="fas fa-eye"></i> SenseCAP Watcher</h2>
-      <p class="project-tagline">Human-detection & gesture-recognition demonstration.</p>
+      <h2 class="project-title">👥 Ortomi & Other Companions</h2>
 
       <p class="project-text">
-        Developed a demo showcasing human detection and gesture-triggered interaction ideas, plus
-        platform testing for integrating the sensor into expressive companion-robot behaviour.
-      </p>
-
-      <ul class="project-tags">
-        <li>Computer vision</li>
-        <li>Edge AI</li>
-        <li>Interaction demos</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_ai-activity-7299841166122913792-ey76?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
-           target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn Post
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       PROJECT 4 — Ortomi
-  ========================== -->
-  <section class="project-vertical" id="ortomi">
-    <div class="project-media" data-carousel>
-      <button class="media-nav prev" type="button" aria-label="Previous media">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-
-      <div class="media-track" data-track>
-        <figure class="media-item media-placeholder">
-          <div class="placeholder-inner">
-            <i class="fa-solid fa-image"></i>
-            <p>Add Ortomi images/GIFs here</p>
-            <small>assets/img/ortomi-1.jpg, ...</small>
-          </div>
-        </figure>
-      </div>
-
-      <button class="media-nav next" type="button" aria-label="Next media">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
-
-    <div class="project-content">
-      <h2 class="project-title"><i class="fas fa-users"></i> Ortomi & Other Companions</h2>
-      <p class="project-tagline">Exploring expressive micro-robots & social-robot design.</p>
-
-      <p class="project-text">
-        Studied Ortomi and other small social robots to understand expressive motion, mechanical simplicity,
-        low-power electronics, and interaction styles. This analysis directly informed the personality,
-        movement patterns, and gesture design for my own companion-robot projects.
+        Studied Ortomi and other small social robots to understand expressive
+        motion, mechanical simplicity, low-power electronics, and interaction
+        styles. This analysis directly informed gesture design and movement
+        personality in my own companion-robot projects.
       </p>
 
       <ul class="project-tags">
         <li>Social robots</li>
-        <li>Rapid prototyping</li>
         <li>Expressive motion</li>
+        <li>Rapid prototyping</li>
       </ul>
 
       <div class="project-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_innovation-activity-7301253669088342018-Em7h?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
-           target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn Post
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn Post
         </a>
       </div>
     </div>
-  </section>
 
-  <!-- =========================
-       PROJECT 5 — SO-101
-  ========================== -->
-  <section class="project-vertical" id="so101">
-    <div class="project-media" data-carousel>
-      <button class="media-nav prev" type="button" aria-label="Previous media">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-
-      <div class="media-track" data-track>
-        <figure class="media-item media-placeholder">
-          <div class="placeholder-inner">
-            <i class="fa-solid fa-robot"></i>
-            <p>Add SO-101 images/GIFs here</p>
-            <small>assets/img/so101-1.gif, ...</small>
-          </div>
-        </figure>
-      </div>
-
-      <button class="media-nav next" type="button" aria-label="Next media">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
-
-    <div class="project-content">
-      <h2 class="project-title"><i class="fas fa-diagram-project"></i> SO-101 Leader–Follower Arms</h2>
-      <p class="project-tagline">LeRobot Hackathon project.</p>
-
-      <p class="project-text">
-        Built and calibrated one leader and one follower SO-101 robotic arm. The follower replicated the leader’s
-        movements in real-time to perform precise pick-and-place tasks. Demonstrated synchronized motion-following
-        using the LeRobot framework.
-      </p>
-
-      <ul class="project-tags">
-        <li>Robotic arms</li>
-        <li>Kinematics</li>
-        <li>LeRobot</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_lerobot-lerobot-so101-activity-7340774137021222913-y4Y6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY"
-           target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn Demo
-        </a>
-      </div>
-    </div>
   </section>
 
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="footer-content">
     <p>© 2025 Ali Badshah — Built with ❤️ and GitHub Pages</p>
   </div>
 </footer>
 
+<!-- ================= SCRIPT ================= -->
 <script>
-  // Simple, robust carousel: scroll by one item per click
-  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
-    const track = carousel.querySelector("[data-track]");
-    const prev = carousel.querySelector(".prev");
-    const next = carousel.querySelector(".next");
-
-    const getStep = () => {
-      const item = track.querySelector(".media-item");
-      if (!item) return 300;
-      const styles = getComputedStyle(track);
-      const gap = parseFloat(styles.columnGap || styles.gap || "0") || 0;
-      return item.getBoundingClientRect().width + gap;
-    };
-
-    prev.addEventListener("click", () => {
-      track.scrollBy({ left: -getStep(), behavior: "smooth" });
-    });
-
-    next.addEventListener("click", () => {
-      track.scrollBy({ left: getStep(), behavior: "smooth" });
-    });
+function scrollMedia(btn, direction) {
+  const track = btn.parentElement.querySelector('.media-track');
+  const scrollAmount = track.clientWidth;
+  track.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
   });
+}
 </script>
 
 </body>

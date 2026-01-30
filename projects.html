@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects – Badshah Robotics</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body>
+<body class="projects-page">
 
 <header class="site-header">
   <div class="container nav-container">
@@ -27,127 +30,274 @@
   </div>
 </header>
 
-<main class="container page-section projects-page">
-
+<main class="container page-section">
   <h1 class="section-title">Projects</h1>
-  <p class="section-subtitle">
-    Robotics, embedded systems, HRI, and expressive companion-robot design.
-  </p>
+  <p class="section-subtitle">Robotics, embedded systems, HRI, and expressive companion-robot design.</p>
 
-  <!-- ========================================================= -->
-  <!-- Pia-the-μRSC -->
-  <!-- ========================================================= -->
-  <section class="project-row">
+  <div class="project-stack">
 
-    <!-- MEDIA / CAROUSEL -->
-    <div class="project-media">
-      <button class="carousel-btn prev">&#10094;</button>
+    <!-- ===================== Pia-the-μRSC ===================== -->
+    <article class="project-row">
+      <div class="project-media">
+        <div class="carousel" data-carousel>
+          <button class="car-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
 
-      <div class="carousel-track">
-        <img src="assets/img/pia-1.jpg" class="carousel-item active" alt="Pia enclosure">
-        <img src="assets/img/pia-2.gif" class="carousel-item" alt="Pia motion">
-        <img src="assets/img/pia-3.jpg" class="carousel-item" alt="Pia internals">
+          <div class="car-stage">
+            <img
+              class="car-image"
+              src="assets/img/pia-1.jpg"
+              alt="Pia-the-μRSC photo"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <button class="car-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+
+          <div class="car-dots" aria-label="Carousel navigation"></div>
+        </div>
       </div>
 
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
+      <div class="project-info">
+        <h2 class="project-title"><i class="fas fa-robot"></i> Pia-the-μRSC</h2>
+        <p class="project-tagline">Portable micro study-companion robot built on Raspberry Pi Pico.</p>
 
-    <!-- TEXT -->
-    <div class="project-content">
-      <h2><i class="fas fa-robot"></i> Pia-the-μRSC</h2>
-      <p class="project-tagline">
-        Portable micro study-companion robot built on Raspberry Pi Pico.
-      </p>
+        <p class="project-text">
+          I engineered a highly portable and low-cost μ-version of the Robotic Study Companion (RSC).
+          The project focuses on CAD redesign, servo-mechanism optimization, sensor integration, MicroPython firmware,
+          and full reproducibility-focused documentation.
+        </p>
 
-      <p>
-        I engineered a highly portable and low-cost μ-version of the Robotic Study
-        Companion (RSC). The project focuses on CAD redesign, servo-mechanism
-        optimization, sensor integration, MicroPython firmware, and full
-        reproducibility-focused documentation.
-      </p>
+        <ul class="project-tags">
+          <li>Raspberry Pi Pico</li>
+          <li>Micro servos</li>
+          <li>CAD redesign</li>
+          <li>Firmware (MicroPython)</li>
+        </ul>
 
-      <ul class="project-tags">
-        <li>Raspberry Pi Pico</li>
-        <li>Micro servos</li>
-        <li>CAD redesign</li>
-        <li>Firmware (MicroPython)</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank">
-          <i class="fab fa-github"></i> GitHub Repo
-        </a>
+        <div class="project-links">
+          <a href="https://github.com/BadshahAli-Robo/Pia-the-MicroRSC-to-be" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub Repo
+          </a>
+        </div>
       </div>
-    </div>
+    </article>
 
-  </section>
+    <!-- ===================== RSC ===================== -->
+    <article class="project-row">
+      <div class="project-media">
+        <div class="carousel" data-carousel>
+          <button class="car-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
 
-  <!-- ========================================================= -->
-  <!-- Robotic Study Companion -->
-  <!-- ========================================================= -->
-  <section class="project-row">
+          <div class="car-stage">
+            <img
+              class="car-image"
+              src="assets/img/RSC-1.jpg"
+              alt="Robotic Study Companion (RSC) photo"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
 
-    <div class="project-media">
-      <img src="assets/img/RSC-1.jpg" class="single-media" alt="RSC hardware">
-    </div>
+          <button class="car-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
 
-    <div class="project-content">
-      <h2><i class="fas fa-hand-sparkles"></i> Robotic Study Companion (RSC)</h2>
-      <p>
-        Companion-robot platform for learning support and HRI research.
-        Contributed to RSC v4 / v4.1 with focus on hardware robustness,
-        improved servo mounting, cable-management redesign, and detailed
-        assembly documentation.
-      </p>
-
-      <ul class="project-tags">
-        <li>HRI</li>
-        <li>Neopixels</li>
-        <li>Raspberry Pi</li>
-        <li>Assembly docs</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://rsc.ee/docs.html" target="_blank">
-          <i class="fas fa-book"></i> Documentation
-        </a>
+          <div class="car-dots" aria-label="Carousel navigation"></div>
+        </div>
       </div>
-    </div>
 
-  </section>
+      <div class="project-info">
+        <h2 class="project-title"><i class="fa-solid fa-hand-sparkles"></i> Robotic Study Companion (RSC)</h2>
+        <p class="project-tagline">Companion-robot platform for learning support and HRI research.</p>
 
+        <p class="project-text">
+          Contributed to RSC v4 / v4.1 with a focus on hardware robustness, improved servo mounting,
+          cable-management redesign, and detailed assembly documentation—making the platform easier to build,
+          maintain, and replicate.
+        </p>
+
+        <ul class="project-tags">
+          <li>HRI</li>
+          <li>Neopixels</li>
+          <li>Raspberry Pi</li>
+          <li>Assembly docs</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://rsc.ee/docs.html" target="_blank" rel="noopener">
+            <i class="fa-solid fa-book"></i> Documentation
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===================== SenseCAP Watcher ===================== -->
+    <article class="project-row">
+      <div class="project-media">
+        <div class="media-placeholder">
+          <i class="fa-solid fa-eye"></i>
+          <p>Add images here later (optional)</p>
+        </div>
+      </div>
+
+      <div class="project-info">
+        <h2 class="project-title"><i class="fa-solid fa-eye"></i> SenseCAP Watcher</h2>
+        <p class="project-tagline">Human-detection and gesture-recognition demonstration.</p>
+
+        <p class="project-text">
+          Developed a full demonstration pipeline using the Seeed Studio SenseCAP Watcher, including human detection,
+          gesture-triggered interactions, and integration concepts for expressive companion-robot behaviour.
+        </p>
+
+        <ul class="project-tags">
+          <li>Computer vision</li>
+          <li>Edge AI</li>
+          <li>Interaction demos</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_ai-activity-7299841166122913792-ey76?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Post
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===================== Ortomi ===================== -->
+    <article class="project-row">
+      <div class="project-media">
+        <div class="media-placeholder">
+          <i class="fa-solid fa-people-group"></i>
+          <p>Add images here later (optional)</p>
+        </div>
+      </div>
+
+      <div class="project-info">
+        <h2 class="project-title"><i class="fa-solid fa-people-group"></i> Ortomi & Other Companions</h2>
+        <p class="project-tagline">Exploring expressive micro-robots & social-robot design.</p>
+
+        <p class="project-text">
+          Studied Ortomi and other small social robots to understand expressive motion, mechanical simplicity,
+          low-power electronics, and interaction styles. This analysis informed the movement patterns and gesture design
+          for my own companion-robot projects.
+        </p>
+
+        <ul class="project-tags">
+          <li>Social robots</li>
+          <li>Rapid prototyping</li>
+          <li>Expressive motion</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_innovation-activity-7301253669088342018-Em7h?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Post
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===================== SO-101 ===================== -->
+    <article class="project-row">
+      <div class="project-media">
+        <div class="media-placeholder">
+          <i class="fa-solid fa-robot"></i>
+          <p>Add images here later (optional)</p>
+        </div>
+      </div>
+
+      <div class="project-info">
+        <h2 class="project-title"><i class="fa-solid fa-robot"></i> SO-101 Leader–Follower Arms</h2>
+        <p class="project-tagline">LeRobot Hackathon project.</p>
+
+        <p class="project-text">
+          Built and calibrated one leader and one follower SO-101 robotic arm. The follower replicated the leader’s
+          movements in real-time to perform precise pick-and-place tasks. Demonstrated synchronized motion-following
+          using the LeRobot framework.
+        </p>
+
+        <ul class="project-tags">
+          <li>Robotic arms</li>
+          <li>Kinematics</li>
+          <li>LeRobot</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://www.linkedin.com/posts/ali-badshah-4776aa203_lerobot-lerobot-so101-activity-7340774137021222913-y4Y6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPk6BsBnK5_V8z7kALfiGrpAFCR9HOnarY" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Demo
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
 </main>
 
 <footer class="site-footer">
-  <p>© 2025 Ali Badshah — Built with ❤️ and GitHub Pages</p>
+  <div class="footer-content">
+    <p>© <span id="year"></span> Ali Badshah — Built with ❤️ and GitHub Pages</p>
+  </div>
 </footer>
 
-<!-- ========================================================= -->
-<!-- SIMPLE CAROUSEL SCRIPT -->
-<!-- ========================================================= -->
 <script>
-  document.querySelectorAll(".project-media").forEach(media => {
-    const items = media.querySelectorAll(".carousel-item");
-    if (!items.length) return;
+  document.getElementById("year").textContent = new Date().getFullYear();
 
-    let index = 0;
-    const prev = media.querySelector(".prev");
-    const next = media.querySelector(".next");
+  // Carousel setup (supports multiple carousels)
+  const carousels = document.querySelectorAll("[data-carousel]");
+  carousels.forEach((carousel) => {
+    const img = carousel.querySelector(".car-image");
+    const dots = carousel.querySelector(".car-dots");
+    const prev = carousel.querySelector(".prev");
+    const next = carousel.querySelector(".next");
 
-    function show(i) {
-      items.forEach(img => img.classList.remove("active"));
-      items[i].classList.add("active");
+    // Detect which carousel this is by current src, then define its image set
+    const src = img.getAttribute("src") || "";
+    let images = [];
+
+    if (src.includes("pia-")) {
+      images = [
+        "assets/img/pia-1.jpg",
+        "assets/img/pia-2.jpg",
+        "assets/img/pia-3.jpg",
+      ];
+    } else if (src.includes("RSC-")) {
+      images = [
+        "assets/img/RSC-1.jpg",
+        "assets/img/RSC-2.jpg",
+      ];
+    } else {
+      images = [src];
     }
 
-    prev.onclick = () => {
-      index = (index - 1 + items.length) % items.length;
-      show(index);
-    };
+    let index = 0;
 
-    next.onclick = () => {
-      index = (index + 1) % items.length;
-      show(index);
-    };
+    // Build dots
+    dots.innerHTML = "";
+    images.forEach((_, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "dot" + (i === 0 ? " active" : "");
+      b.setAttribute("aria-label", "Go to slide " + (i + 1));
+      b.addEventListener("click", () => setSlide(i));
+      dots.appendChild(b);
+    });
+
+    // If only 1 image, hide controls
+    if (images.length <= 1) {
+      prev.style.display = "none";
+      next.style.display = "none";
+      dots.style.display = "none";
+      return;
+    }
+
+    function setSlide(i) {
+      index = (i + images.length) % images.length;
+      img.src = images[index];
+
+      const allDots = dots.querySelectorAll(".dot");
+      allDots.forEach((d, di) => d.classList.toggle("active", di === index));
+    }
+
+    prev.addEventListener("click", () => setSlide(index - 1));
+    next.addEventListener("click", () => setSlide(index + 1));
   });
 </script>
 

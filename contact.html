@@ -1,72 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Badshah Robotics</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Badshah Robotics</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-    
-<body>
+
+<body class="contact-page">
 
 <header class="site-header">
-    <div class="container nav-container">
-        <div class="logo">
-            <div class="logo-icon"><i class="fas fa-robot"></i></div>
-            <div class="logo-text">Badshah Robotics</div>
-        </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
+  <div class="container nav-container">
+    <div class="logo">
+      <div class="logo-icon"><i class="fas fa-robot"></i></div>
+      <div class="logo-text">Badshah Robotics</div>
     </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
 </header>
 
-
 <main class="container page-section">
+  <h1 class="section-title">Contact Me</h1>
+  <p class="section-subtitle">
+    If you want to collaborate, ask questions, or discuss robotics, automation, or HRI — feel free to reach out.
+  </p>
 
-    <h1 class="section-title">Contact Me</h1>
-    <p class="section-subtitle">If you want to collaborate, ask questions, or discuss robotics, automation, or HRI — feel free to reach out.</p>
+  <div class="contact-grid">
 
-    <!-- Contact Info -->
-    <div class="section-block">
-        <h2><i class="fas fa-address-book"></i> Get in Touch</h2>
+    <!-- LEFT: Get in touch card -->
+    <section class="contact-card">
+      <h2 class="card-title"><i class="fa-solid fa-address-card"></i> Get in Touch</h2>
 
-        <ul>
-            <li><i class="fas fa-envelope"></i> alibadshah.robo@gmail.com</li>
-            <li><i class="fas fa-location-dot"></i> Tartu, Estonia</li>
-            <li><a href="https://www.linkedin.com/in/ali-badshah-4776aa203" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/BadshahAli-Robo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-        </ul>
-    </div>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:alibadshah.robo@gmail.com">alibadshah.robo@gmail.com</a>
+        </li>
 
-    <!-- QUICK MESSAGE FORM -->
-    <div class="section-block">
-        <h2><i class="fas fa-paper-plane"></i> Quick Message</h2>
-        <p>This form goes directly to your email through Formspree.</p>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Tartu, Estonia</span>
+        </li>
 
-        <form class="contact-form" action="https://formspree.io/f/myzqjaoe" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/ali-badshah-4776aa203/" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
 
-            <button class="btn-submit" type="submit">Send Message</button>
-        </form>
-    </div>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/BadshahAli-Robo" target="_blank" rel="noopener">GitHub</a>
+        </li>
+      </ul>
 
+      <div class="contact-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>I usually respond within 24–48 hours.</span>
+      </div>
+    </section>
+
+    <!-- RIGHT: Form card -->
+    <section class="contact-card">
+      <h2 class="card-title"><i class="fa-solid fa-paper-plane"></i> Quick Message</h2>
+      <p class="card-subtitle">This form goes directly to your email through Formspree.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/myzqjaoe" method="POST">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Your email" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button class="btn-submit" type="submit">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </section>
+
+  </div>
 </main>
 
-
 <footer class="site-footer">
-    <div class="footer-content">
-        <p>© 2025 Ali Badshah — Built with ❤️ and GitHub Pages</p>
-    </div>
+  <div class="footer-content">
+    <p>© <span id="year"></span> Ali Badshah — Built with ❤️ and GitHub Pages</p>
+  </div>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
-

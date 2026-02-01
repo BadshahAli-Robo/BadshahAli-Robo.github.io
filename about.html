@@ -1,124 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About – Badshah Robotics</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Badshah Robotics</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-    
-<body>
-    
+
+<body class="about-page">
+
 <header class="site-header">
-    <div class="container nav-container">
-        <div class="logo">
-            <div class="logo-icon"><i class="fas fa-robot"></i></div>
-            <div class="logo-text">Badshah Robotics</div>
-        </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+  <div class="container nav-container">
+    <div class="logo">
+      <div class="logo-icon"><i class="fas fa-robot"></i></div>
+      <div class="logo-text">Badshah Robotics</div>
     </div>
-</header>
 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
 <main class="container page-section">
 
-    <h1 class="section-title">About Me</h1>
-    <p class="section-subtitle">Robotics • Embedded Systems • Human–Robot Interaction</p>
+  <h1 class="section-title">About Me</h1>
+  <p class="section-subtitle">Robotics • Embedded Systems • Human–Robot Interaction</p>
 
+  <!-- 1) WHO AM I -->
+  <section class="section-block">
+    <h2><i class="fa-solid fa-user"></i> Who I Am</h2>
 
-    <!-- 1. Who I Am -->
-    <div class="section-block">
-        <h2><i class="fas fa-user-circle"></i> Who I Am</h2>
-        <p>
-            I am a Robotics & Bio-Engineering student at the University of Tartu, specializing in companion robots,
-            embedded systems, and expressive study-support platforms such as 
-            <strong>Pia-the-μRSC</strong> and the 
-            <strong>Robotic Study Companion (RSC)</strong>.
-        </p>
-        <p>
-            My work combines CAD design, 3D printing, electronics, firmware development, and human-robot interaction
-            to create friendly, accessible, and reproducible robotic systems for education and research.
-        </p>
-        <p>
-            I am deeply interested in building expressive micro-robots that motivate students, support learning,
-            and bring personality to educational environments through motion and behaviour.
-        </p>
+    <p>
+      I am a Robotics & Bio-Engineering student at the University of Tartu, specializing in companion robots,
+      embedded systems, and expressive study-support platforms such as <strong>Pia-the-μRSC</strong> and the
+      <strong>Robotic Study Companion (RSC)</strong>.
+    </p>
+
+    <p>
+      My work combines CAD design, 3D printing, electronics, firmware development, and human–robot interaction
+      to create friendly, accessible, and reproducible robotic systems for education and research.
+    </p>
+
+    <p>
+      I am deeply interested in building expressive micro-robots that motivate students, support learning,
+      and bring personality to educational environments through motion and behaviour.
+    </p>
+  </section>
+
+  <!-- 2) EDUCATION -->
+  <section class="section-block">
+    <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+
+    <div class="about-item">
+      <div class="about-item-title"><strong>BSc in Science & Technology (Robotics & Bio-Engineering)</strong></div>
+      <div class="about-item-sub">University of Tartu, Estonia</div>
     </div>
+  </section>
 
+  <!-- 3) CURRENT FOCUS -->
+  <section class="section-block">
+    <h2><i class="fa-solid fa-lightbulb"></i> Current Focus</h2>
 
-    <!-- 2. Education -->
-    <div class="section-block">
-        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-        <p><strong>BSc in Science & Technology (Robotics & Bio-Engineering)</strong></p>
-        <p>University of Tartu, Estonia</p>
+    <p>
+      Building <strong>Pia-the-μRSC</strong> with improved hardware, CAD redesign, servo optimization,
+      sensor integration, and reproducibility-focused documentation.
+    </p>
+
+    <p>
+      My long-term goal is to create a portable, robust, and low-cost micro companion-robot platform that students can
+      build, maintain, and extend easily.
+    </p>
+  </section>
+
+  <!-- 4) SKILLS -->
+  <section class="section-block">
+    <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills & Tools</h2>
+
+    <ul class="about-list">
+      <li><i class="fa-solid fa-robot"></i> Companion Robots & HRI</li>
+      <li><i class="fa-solid fa-microchip"></i> Embedded Systems (RPi Pico, ESP32, Raspberry Pi)</li>
+      <li><i class="fa-solid fa-cube"></i> CAD & 3D Printing (Fusion 360, SolidWorks)</li>
+      <li><i class="fa-solid fa-bolt"></i> Electronics, Wiring & Prototyping</li>
+      <li><i class="fa-solid fa-code"></i> Firmware: MicroPython, Python, C/C++</li>
+      <li><i class="fa-solid fa-wand-magic-sparkles"></i> Interaction Design & Motion Personality</li>
+    </ul>
+  </section>
+
+  <!-- 5) HONORS -->
+  <section class="section-block">
+    <h2><i class="fa-solid fa-award"></i> Honors & Awards</h2>
+
+    <div class="about-award">
+      <div class="award-title"><strong>IEEE RO-MAN 2025 — The Robot Design Competition</strong></div>
+      <div class="award-sub">Eindhoven, Netherlands — 25th–29th August 2025</div>
+
+      <ul class="about-list compact">
+        <li><i class="fa-solid fa-medal"></i> Awarded <strong>Best Technical Design</strong> for Poster Presentation.</li>
+        <li><i class="fa-solid fa-file-lines"></i> Conference publication (poster).</li>
+      </ul>
+
+      <div class="award-quote">
+        <span class="muted">Poster title:</span>
+        <strong>“Say Hi to the RSC (v4.1), the study buddy you (can) build (and fix)!”</strong>
+      </div>
+
+      <div class="award-quote muted">
+        <span class="muted">Authors:</span> Matevž Zorec, Farnaz Baksh, Ali Badshah
+      </div>
     </div>
-
-
-    <!-- 3. Current Focus -->
-    <div class="section-block">
-        <h2><i class="fas fa-lightbulb"></i> Current Focus</h2>
-        <p>
-            Building <strong>Pia-the-μRSC</strong> with improved hardware, CAD redesign, servo optimization,
-            sensor integration, and reproducibility-focused documentation.
-        </p>
-        <p>
-            My long-term goal is to create a portable, robust, and low-cost micro companion-robot platform
-            that students can build, maintain, and extend easily.
-        </p>
-    </div>
-
-
-    <!-- 4. Skills -->
-    <div class="section-block">
-        <h2><i class="fas fa-screwdriver-wrench"></i> Skills & Tools</h2>
-        <ul>
-            <li><i class="fas fa-robot"></i> Companion Robots & HRI</li>
-            <li><i class="fas fa-microchip"></i> Embedded Systems (Rpi Pico, ESP32, Raspberry Pi)</li>
-            <li><i class="fas fa-cube"></i> CAD & 3D Printing (Fusion 360, SolidWorks)</li>
-            <li><i class="fas fa-bolt"></i> Electronics, Wiring & Prototyping</li>
-            <li><i class="fas fa-code"></i> Firmware: MicroPython, Python, C/C++</li>
-            <li><i class="fas fa-sparkles"></i> Interaction Design & Motion Personality</li>
-        </ul>
-    </div>
-
-
-    <!-- 5. Honors & Awards -->
-    <div class="section-block">
-        <h2><i class="fas fa-award"></i> Honors & Awards</h2>
-
-        <p><strong>IEEE RO-MAN 2025 – The Robot Design Competition</strong><br>
-        Eindhoven, Netherlands — <em>25th–29th August 2025</em></p>
-
-        <ul>
-            <li><i class="fas fa-medal"></i> Awarded <strong>Best Technical Design</strong> for Poster Presentation.</li>
-            <li><i class="fas fa-file-alt"></i> Conference publication:<br>
-                Matevž Zorec, Farnaz Baksh, Ali Badshah,<br>
-                <em>“Say Hi to the RSC (v4.1), the study buddy you (can) build (and fix)!”</em>
-            </li>
-            <li>
-                <a href="https://www.ro-man2025.org/awards" target="_blank" style="color:#7fc6ff;">
-                    <i class="fas fa-external-link-alt"></i> Official Award Link
-                </a>
-            </li>
-        </ul>
-
-    </div>
+  </section>
 
 </main>
 
-
 <footer class="site-footer">
-    <div class="footer-content">
-        <p>© 2025 Ali Badshah — Built with ❤️ and GitHub Pages</p>
-    </div>
+  <div class="footer-content">
+    <p>© <span id="year"></span> Ali Badshah — Built with ❤️ and GitHub Pages</p>
+  </div>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
